@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.projects.util.TestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="Edit(failed)">
+    <classes>
+      <class name="com.projects.testcases.EditandsaveComputer">
+        <methods>
+          <include name="aftertest"/>
+          <include name="Generate_report"/>
+          <include name="verify"/>
+          <include name="beforetest"/>
+          <include name="EditdataAndSave"/>
+        </methods>
+      </class> <!-- com.projects.testcases.EditandsaveComputer -->
+    </classes>
+  </test> <!-- Edit(failed) -->
+  <test thread-count="5" name="Delete(failed)">
+    <classes>
+      <class name="com.projects.testcases.SearchAndDelete">
+        <methods>
+          <include name="aftertest"/>
+          <include name="Generate_report"/>
+          <include name="deleteandverifymsg"/>
+          <include name="verify"/>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- com.projects.testcases.SearchAndDelete -->
+    </classes>
+  </test> <!-- Delete(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="28882" started-at="2020-12-07T04:36:42 IST" finished-at="2020-12-07T04:37:11 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="28882" started-at="2020-12-07T04:36:42 IST" finished-at="2020-12-07T04:37:11 IST">
+      <class name="com.projects.testcases.SearchAndDelete">
+        <test-method status="PASS" signature="beforetest()[pri:0, instance:com.projects.testcases.SearchAndDelete@1442d7b5]" name="beforetest" is-config="true" duration-ms="7314" started-at="2020-12-07T04:36:42 IST" finished-at="2020-12-07T04:36:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method status="PASS" signature="init_report()[pri:0, instance:com.projects.testcases.SearchAndDelete@1442d7b5]" name="init_report" is-config="true" duration-ms="2" started-at="2020-12-07T04:36:50 IST" finished-at="2020-12-07T04:36:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init_report -->
+        <test-method status="PASS" signature="searchandopen(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.projects.testcases.SearchAndDelete@1442d7b5]" name="searchandopen" duration-ms="475" started-at="2020-12-07T04:36:50 IST" data-provider="getData" finished-at="2020-12-07T04:36:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2020-04-10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2020-12-10]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[IBM]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchandopen -->
+        <test-method status="PASS" signature="Generate_report()[pri:0, instance:com.projects.testcases.SearchAndDelete@1442d7b5]" name="Generate_report" is-config="true" duration-ms="268" started-at="2020-12-07T04:36:50 IST" finished-at="2020-12-07T04:36:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Generate_report -->
+        <test-method status="PASS" signature="init_report()[pri:0, instance:com.projects.testcases.SearchAndDelete@1442d7b5]" name="init_report" is-config="true" duration-ms="1" started-at="2020-12-07T04:36:50 IST" finished-at="2020-12-07T04:36:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init_report -->
+        <test-method status="PASS" signature="deleteandverifymsg()[pri:3, instance:com.projects.testcases.SearchAndDelete@1442d7b5]" name="deleteandverifymsg" duration-ms="20089" started-at="2020-12-07T04:36:50 IST" depends-on-methods="com.projects.testcases.SearchAndDelete.searchandopen" finished-at="2020-12-07T04:37:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteandverifymsg -->
+        <test-method status="PASS" signature="Generate_report()[pri:0, instance:com.projects.testcases.SearchAndDelete@1442d7b5]" name="Generate_report" is-config="true" duration-ms="11" started-at="2020-12-07T04:37:11 IST" finished-at="2020-12-07T04:37:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Generate_report -->
+        <test-method status="PASS" signature="init_report()[pri:0, instance:com.projects.testcases.SearchAndDelete@1442d7b5]" name="init_report" is-config="true" duration-ms="0" started-at="2020-12-07T04:37:11 IST" finished-at="2020-12-07T04:37:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init_report -->
+        <test-method status="FAIL" signature="verify()[pri:4, instance:com.projects.testcases.SearchAndDelete@1442d7b5]" name="verify" duration-ms="32" started-at="2020-12-07T04:37:11 IST" depends-on-methods="com.projects.testcases.SearchAndDelete.deleteandverifymsg, com.projects.testcases.SearchAndDelete.searchandopen" finished-at="2020-12-07T04:37:11 IST">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "No"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "No"
+at java.lang.NumberFormatException.forInputString(Unknown Source)
+at java.lang.Integer.parseInt(Unknown Source)
+at java.lang.Integer.parseInt(Unknown Source)
+at com.projects.testcases.SearchAndDelete.verify(SearchAndDelete.java:67)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify -->
+        <test-method status="PASS" signature="Generate_report()[pri:0, instance:com.projects.testcases.SearchAndDelete@1442d7b5]" name="Generate_report" is-config="true" duration-ms="6" started-at="2020-12-07T04:37:11 IST" finished-at="2020-12-07T04:37:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Generate_report -->
+        <test-method status="PASS" signature="aftertest()[pri:0, instance:com.projects.testcases.SearchAndDelete@1442d7b5]" name="aftertest" is-config="true" duration-ms="642" started-at="2020-12-07T04:37:11 IST" finished-at="2020-12-07T04:37:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+      </class> <!-- com.projects.testcases.SearchAndDelete -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
